@@ -16,3 +16,6 @@ This initiative is designed to enhance financial oversight and promote transpare
 - **Azure Data Factory**: Utilized for building and orchestrating ETL pipelines.
 - **Pandas**: A Python library for efficient data manipulation and analysis.
 - **Azure Data Lake Storage**: Serves as the storage solution for processed data.
+![ADLS](https://github.com/user-attachments/assets/8b9e0a34-74f6-48bf-b565-ddadebb671fa)
+![ADF](https://github.com/user-attachments/assets/0936a912-949b-4ea6-93b7-6f7ffdc01b12)
+![python](https://github.com/user-attachments/assets/4829ff6f-1e54-4e20-9e28-a78490d7bdbb)
