@@ -1,4 +1,4 @@
-#PROJECT: NYC PAYROLL DATA INTEGRATION
+# Project: NYC Payroll Data Integration  
 
 ## Project Overview  
 
