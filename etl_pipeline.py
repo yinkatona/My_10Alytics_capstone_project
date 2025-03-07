@@ -38,10 +38,10 @@ payroll_fact.index.name = 'PayrollFactID'
 payroll_fact = payroll_fact.reset_index()
 
 # saving the data to csv
-employee.to_csv(r'rawdata\employee.csv', index=False)
-agency.to_csv(r'rawdata\agency.csv', index=False)
-title.to_csv(r'rawdata\title.csv', index=False)
-payroll_fact.to_csv(r'rawdata\payroll_fact.csv', index=False)
+employee.to_csv(r'processed_data\employee.csv', index=False)
+agency.to_csv(r'processed_data\agency.csv', index=False)
+title.to_csv(r'processed_data\title.csv', index=False)
+payroll_fact.to_csv(r'processed_data\payroll_fact.csv', index=False)
 
 print('Files has been loaded temporarrily to the local machine')
 
@@ -68,7 +68,7 @@ def upload_to_azure_blob(df, container_client, blob_name):
 
 
 # Uploading the Data to Azure Blob Storage
-upload_to_azure_blob(employee, container_client, 'rawdata/employee.parquet')
-upload_to_azure_blob(agency, container_client, 'rawdata/agency.parquet')
-upload_to_azure_blob(title, container_client, 'rawdata/title.parquet')
-upload_to_azure_blob(payroll_fact, container_client, 'rawdata/payroll_fact.parquet')  
+upload_to_azure_blob(employee, container_client, 'processed_data/employee.parquet')
+upload_to_azure_blob(agency, container_client, 'processed_data/agency.parquet')
+upload_to_azure_blob(title, container_client, 'processed_data/title.parquet')
+upload_to_azure_blob(payroll_fact, container_client, 'processed_data/payroll_fact.parquet')  
