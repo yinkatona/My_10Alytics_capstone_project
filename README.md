@@ -1,14 +1,13 @@
-PROJECT: NYC PAYROLL DATA INTEGRATION
+#PROJECT: NYC PAYROLL DATA INTEGRATION
 
-Project Overview
+## Project Overview  
 
-The City of New York is launching a project to integrate payroll data across all municipal agencies, with the goal of creating a comprehensive Data Analytics platform. This platform will serve two main objectives:
+The City of New York is launching a project to integrate payroll data across all municipal agencies, aiming to develop a comprehensive Data Analytics platform. This platform will serve two key objectives:  
 
-Financial Resource Allocation Analysis: Assess how the City's financial resources are distributed, with a specific focus on the budget allocated to overtime pay.
+- **Financial Resource Allocation Analysis**: Evaluate how the City's financial resources are distributed, with a particular focus on the budget allocated to overtime pay.  
+- **Transparency and Public Accessibility**: Provide public access to payroll data, ensuring transparency in how taxpayer money is spent on salaries and overtime for all City employees.  
 
-Transparency and Public Accessibility: Provide public access to the data, offering transparency on how taxpayer money is spent on salaries and overtime across all City employees.
-
-This initiative aims to enhance financial oversight and ensure transparency in the City's budget allocation.
+This initiative is designed to enhance financial oversight and promote transparency in the City's budget allocation.  
 
 ## Tech Stack
 
