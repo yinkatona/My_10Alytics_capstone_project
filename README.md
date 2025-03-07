@@ -32,4 +32,42 @@ To build high-quality data pipelines that are **dynamic, automated, scalable, an
 - **Python** and **Pandas** facilitate data processing, transformation, and automation, enhancing pipeline flexibility and performance.  
 - **Azure Data Lake Storage** serves as a centralized repository for structured and unstructured data, supporting scalability and efficient data access.  
 
-This stack ensures the pipeline is **cost-effective, highly available, and optimized for performance**, meeting the requirements of an enterprise-grade data integration solution.  
+This stack ensures the pipeline is **cost-effective, highly available, and optimized for performance**, meeting the requirements of an enterprise-grade data integration solution. 
+
+## NYC Payroll Integration Pipeline Architecture  
+
+The NYC Payroll Integration Pipeline is designed to efficiently process payroll data from ingestion to analysis using **Azure cloud services**. The architecture ensures **scalability, automation, and efficient data transformation** through a structured flow, as illustrated in the diagram.  
+
+### **Pipeline Flow and Stages**  
+
+1. **Data Source (CSV Files) Ingestion**  
+   - Payroll data is collected from remotely stored CSV files and ingested into the pipeline for processing.  
+   - Python was used for **data extraction, transformation, and cleaning**, ensuring the data is in the correct format before storage.  
+
+2. **Storage in Azure Data Lake**  
+   - The transformed data is loaded into **Azure Data Lake Storage**, which acts as a **centralized data repository** for structured and semi-structured data.  
+   - This enables **scalable and cost-effective storage** while maintaining data integrity.  
+
+3. **Data Warehousing – Staging Layer (SQL Database)**  
+   - The ingested data is then moved to the **staging layer** in an Azure **SQL Database**.  
+   - This step allows **data validation, deduplication, and further transformation** before proceeding to final storage.  
+
+4. **Data Warehousing – Serving Layer (SQL Database)**  
+   - After validation, the processed data is transferred to the **serving layer**, which serves as the final structured **data warehouse**.  
+   - This optimized storage layer supports **efficient querying and reporting** for downstream analysis.  
+
+5. **Data Orchestration with Azure Data Factory**  
+   - The entire **ETL (Extract, Transform, Load) pipeline** is managed using **Azure Data Factory**, automating data movement and processing.  
+   - This ensures a **seamless and scheduled data pipeline** with monitoring and logging capabilities.  
+
+6. **Analysis & Reporting**  
+   - The cleaned and processed data is now ready for **business intelligence (BI) and analytics**.  
+   - The data can be integrated into **visualization tools like Power BI or Azure Synapse Analytics** for insights on payroll trends, overtime allocations, and budget transparency.  
+
+### **Key Benefits of This Architecture**  
+✅ **Scalability** – Easily handles growing payroll data across municipal agencies.  
+✅ **Automation** – Ensures a streamlined and monitored ETL process.  
+✅ **Efficiency** – Optimized for quick querying and business intelligence.  
+✅ **Transparency** – Provides public access to payroll data for accountability.  
+
+This architecture effectively enables the **City of New York** to enhance financial oversight and improve public transparency in budget allocations.  
