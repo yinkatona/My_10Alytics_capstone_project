@@ -106,5 +106,15 @@ The NYC Payroll Data Integration schema is designed using a **star schema** mode
 
 4. **Dimension Table: `title_dim`**  
    - Stores job title classifications, including **title codes and descriptions**.  
-   - The **primary key (`Title
+   - The **primary key (`TitleCode`)** uniquely identifies each job title.  
+   - It connects to both **`payroll_fact`** (via `TitleCode`) and **`employee_dim`** (via `TitleDescription`), enabling analysis of salaries and payroll trends by job role.  
+
+### **Key Features & Benefits**  
+
+✅ **Optimized for Analytics** – The **star schema** design enhances query performance for payroll and budget analysis.  
+✅ **Scalability** – Supports large datasets, making it ideal for city-wide payroll data integration.  
+✅ **Data Integrity** – Uses **primary and foreign key constraints** to maintain referential integrity.  
+✅ **Efficient Querying** – Allows quick insights into **payroll expenses, overtime trends, and financial distributions** across agencies and job titles.  
+
+This schema enables **efficient financial analysis, transparency, and reporting**, supporting the City of New York’s goal of improving payroll data accessibility and accountability.  
 
