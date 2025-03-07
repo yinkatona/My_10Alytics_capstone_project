@@ -23,3 +23,13 @@ This initiative is designed to enhance financial oversight and promote transpare
 ![ADF](https://github.com/user-attachments/assets/0936a912-949b-4ea6-93b7-6f7ffdc01b12)
 ![ADLS](https://github.com/user-attachments/assets/8b9e0a34-74f6-48bf-b565-ddadebb671fa)
 
+## Why This Tech Stack?  
+
+To build high-quality data pipelines that are **dynamic, automated, scalable, and efficiently monitored**, I have chosen **Azure Cloud** as the platform for development.  
+
+- **Azure Data Factory** is used to orchestrate the end-to-end **ETL (Extract, Transform, Load) process**, ensuring seamless data integration and transformation across various sources.  
+- **Azure SQL Database** provides a robust and scalable environment for efficient data storage, management, and querying.  
+- **Python** and **Pandas** facilitate data processing, transformation, and automation, enhancing pipeline flexibility and performance.  
+- **Azure Data Lake Storage** serves as a centralized repository for structured and unstructured data, supporting scalability and efficient data access.  
+
+This stack ensures the pipeline is **cost-effective, highly available, and optimized for performance**, meeting the requirements of an enterprise-grade data integration solution.  
