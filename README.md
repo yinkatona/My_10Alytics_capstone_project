@@ -73,3 +73,38 @@ The NYC Payroll Integration Pipeline is designed to efficiently process payroll 
 ✅ **Transparency** – Provides public access to payroll data for accountability.  
 
 This architecture effectively enables the **City of New York** to enhance financial oversight and improve public transparency in budget allocations.  
+
+## NYC Payroll Data Integration Schema  
+
+The NYC Payroll Data Integration schema is designed using a **star schema** model to optimize **data retrieval, analytics, and reporting**. The schema consists of one **fact table** (`payroll_fact`) and three **dimension tables** (`employee_dim`, `agency_dim`, and `title_dim`).  
+
+### **Schema Overview & Table Relationships**  
+
+![capstone-project-Page-2 drawio](https://github.com/user-attachments/assets/662b9a91-7937-4e66-ac5f-89731a4ff32c)
+
+
+1. **Fact Table: `payroll_fact`**  
+   - This table serves as the **central repository** for payroll-related transactions.  
+   - It contains detailed payroll records, including **base salary, overtime hours, total overtime paid, and other compensations**.  
+   - The **primary key (`payroll_ID`)** uniquely identifies each payroll record.  
+   - The table maintains a **foreign key (FK) relationship** with the following dimension tables:  
+     - `AgencyID` → **Links to `agency_dim`** (to associate payroll data with the respective municipal agency).  
+     - `EmployeeID` → **Links to `employee_dim`** (to associate payroll data with employees).  
+     - `TitleCode` → **Links to `title_dim`** (to associate payroll data with job titles).  
+
+2. **Dimension Table: `employee_dim`**  
+   - This table contains detailed employee information, including **first name, last name, and associated agency**.  
+   - The **primary key (`EmployeeID`)** uniquely identifies each employee.  
+   - The table maintains relationships with:  
+     - `payroll_fact` via **`EmployeeID`**.  
+     - `title_dim` through **`TitleDescription`**, providing additional job classification details.  
+
+3. **Dimension Table: `agency_dim`**  
+   - Stores information about municipal agencies, such as **agency name, start date, and borough location**.  
+   - The **primary key (`AgencyID`)** uniquely identifies each agency.  
+   - This table is connected to **`payroll_fact`** via `AgencyID`, allowing payroll data to be grouped by agency.  
+
+4. **Dimension Table: `title_dim`**  
+   - Stores job title classifications, including **title codes and descriptions**.  
+   - The **primary key (`Title
+
