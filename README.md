@@ -36,6 +36,8 @@ This stack ensures the pipeline is **cost-effective, highly available, and optim
 
 ## NYC Payroll Integration Pipeline Architecture  
 
+![capstone-project-architecture-new-Page-2](https://github.com/user-attachments/assets/1eec8b5c-79e4-42c7-86e9-278d97f263be)
+
 The NYC Payroll Integration Pipeline is designed to efficiently process payroll data from ingestion to analysis using **Azure cloud services**. The architecture ensures **scalability, automation, and efficient data transformation** through a structured flow, as illustrated in the diagram.  
 
 ### **Pipeline Flow and Stages**  
